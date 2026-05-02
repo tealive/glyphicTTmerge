@@ -10,8 +10,8 @@
 
 use std::io::{self, Read};
 
-use glyphic_lib::ctx::db::{Db, EmbedKind};
-use glyphic_lib::ctx::{embed, hook, virtualize};
+use glyphicttmerge_lib::ctx::db::{Db, EmbedKind};
+use glyphicttmerge_lib::ctx::{embed, hook, virtualize};
 
 fn main() {
     let args: Vec<String> = std::env::args().collect();

@@ -5,7 +5,7 @@
 //!   exec    — Execute a command, filter output, log savings, print result
 //!   version — Print version
 
-use glyphic_lib::filter;
+use glyphicttmerge_lib::filter;
 use std::io::{self, Read, Write};
 use std::process::Command;
 use std::time::Instant;

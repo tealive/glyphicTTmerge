@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/nicoverbruggen/tauri-v2-schema/main/schema.json",
-  "productName": "Glyphic",
+  "productName": "glyphicTTmerge",
   "version": "0.19.0",
-  "identifier": "com.caio.glyphic",
+  "identifier": "com.tealive.glyphicttmerge",
   "build": {
     "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
@@ -34,7 +34,7 @@
   "app": {
     "windows": [
       {
-        "title": "Glyphic",
+        "title": "glyphicTTmerge",
         "width": 1200,
         "height": 800,
         "minWidth": 900,
@@ -47,12 +47,5 @@
       "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://github.com https://api.github.com"
     }
   },
-  "plugins": {
-    "updater": {
-      "endpoints": [
-        "https://github.com/caioricciuti/glyphic/releases/latest/download/latest.json"
-      ],
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEU4MDI5NDU3QzRBMjlERTEKUldUaG5hTEVWNVFDNkdrZFgzQzRodG1jUEl3WHVMU2NnajJKYmpscHRVL2tQdGtkeUdvL0d0d0EK"
-    }
-  }
+  "plugins": {}
 }

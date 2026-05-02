@@ -30,13 +30,12 @@ fn show_window(window: &tauri::WebviewWindow) {
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
-        .plugin(tauri_plugin_updater::Builder::new().build())
         .plugin(tauri_plugin_process::init())
         .plugin(tauri_plugin_notification::init())
         .manage(pty::PtyState::default())
         .setup(|app| {
             // Build tray menu
-            let show = MenuItemBuilder::with_id("show", "Show Glyphic").build(app)?;
+            let show = MenuItemBuilder::with_id("show", "Show glyphicTTmerge").build(app)?;
             let quit = MenuItemBuilder::with_id("quit", "Quit").build(app)?;
             let menu = MenuBuilder::new(app).item(&show).separator().item(&quit).build()?;
 
