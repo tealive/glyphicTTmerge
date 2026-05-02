@@ -28,6 +28,10 @@ export const api = {
     computeLive: () => invoke<StatsCache>("compute_live_stats"),
   },
 
+  insights: {
+    compute: () => invoke<InsightsSummary>("compute_insights"),
+  },
+
   projects: {
     list: () => invoke<ProjectInfo[]>("list_projects"),
   },
@@ -357,4 +361,40 @@ export interface KeybindingEntry {
   command: string;
   description: string;
   when: string | null;
+}
+
+export interface InsightsSummary {
+  generatedAt: string;
+  totalMessages: number;
+  totalSessions: number;
+  totalToolCalls: number;
+  activeDays: number;
+  firstDate: string;
+  lastDate: string;
+  topProjects: ProjectStat[];
+  projectClusters: ClusterStat[];
+  toolFrequencies: ToolStat[];
+  plansCount: number;
+  scheduledTasksCount: number;
+  memoryFilesCount: number;
+}
+
+export interface ProjectStat {
+  slug: string;
+  displayName: string;
+  messageCount: number;
+  sessionCount: number;
+  toolCallCount: number;
+  lastActivity: string;
+}
+
+export interface ClusterStat {
+  key: string;
+  projectCount: number;
+  messageCount: number;
+}
+
+export interface ToolStat {
+  name: string;
+  count: number;
 }

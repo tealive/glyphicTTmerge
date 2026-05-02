@@ -30,6 +30,7 @@
     Gauge,
     Keyboard,
     Network,
+    Lightbulb,
   } from "lucide-svelte";
   import { getTheme, toggleTheme } from "$lib/stores/theme.svelte";
   import type { CostSummary } from "$lib/tauri/commands";
@@ -67,6 +68,7 @@
     savings: Gauge,
     keybindings: Keyboard,
     network: Network,
+    lightbulb: Lightbulb,
   };
 
   const currentTheme = $derived(getTheme());

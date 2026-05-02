@@ -1,5 +1,6 @@
 export type Page =
   | "dashboard"
+  | "insights"
   | "settings"
   | "hooks"
   | "instructions"
@@ -26,6 +27,7 @@ export interface NavItem {
 
 export const NAV_ITEMS: NavItem[] = [
   { id: "dashboard", label: "Dashboard", icon: "chart" },
+  { id: "insights", label: "Insights", icon: "lightbulb" },
   { id: "settings", label: "Settings", icon: "gear" },
   { id: "hooks", label: "Hooks", icon: "bolt" },
   { id: "instructions", label: "Instructions", icon: "book" },

@@ -6,6 +6,7 @@ pub mod pipelines;
 pub mod scheduler;
 pub mod maintenance;
 pub mod hooks;
+pub mod insights;
 pub mod instructions;
 pub mod mcp;
 pub mod memory;

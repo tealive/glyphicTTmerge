@@ -5,6 +5,7 @@
   import CommandPalette from "$lib/components/shared/CommandPalette.svelte";
   import OnboardingWelcome from "$lib/components/shared/OnboardingWelcome.svelte";
   import DashboardPage from "$lib/components/dashboard/DashboardPage.svelte";
+  import InsightsPage from "$lib/components/insights/InsightsPage.svelte";
   import SettingsPage from "$lib/components/settings/SettingsPage.svelte";
   import HooksPage from "$lib/components/hooks/HooksPage.svelte";
   import InstructionsPage from "$lib/components/instructions/InstructionsPage.svelte";
@@ -40,6 +41,8 @@
     <div class="flex-1 overflow-hidden">
       {#if currentPage === "dashboard"}
         <DashboardPage />
+      {:else if currentPage === "insights"}
+        <InsightsPage />
       {:else if currentPage === "settings"}
         <SettingsPage />
       {:else if currentPage === "hooks"}

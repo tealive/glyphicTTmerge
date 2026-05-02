@@ -95,6 +95,7 @@ pub fn run() {
             // Stats
             commands::stats::get_stats,
             commands::stats::compute_live_stats,
+            commands::insights::compute_insights,
             // Projects
             commands::projects::list_projects,
             // Hooks

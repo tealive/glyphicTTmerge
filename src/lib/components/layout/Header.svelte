@@ -3,6 +3,7 @@
 
   const PAGE_TITLES: Record<Page, string> = {
     dashboard: "Dashboard",
+    insights: "Insights",
     settings: "Settings",
     hooks: "Hooks",
     instructions: "Instructions",
@@ -24,6 +25,7 @@
 
   const PAGE_DESCRIPTIONS: Record<Page, string> = {
     dashboard: "Your Claude Code overview and stats",
+    insights: "Aggregate signal from your local Claude Code history",
     settings: "Global and project configuration",
     hooks: "Event-driven automation hooks",
     instructions: "CLAUDE.md instruction files",
